@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #769973;
+    margin: 0;
+    padding: 20px;
+}
+.game-container {
+    text-align: center;
+    position: relative;
+}
+.stats, .controls {
+    margin: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 80vw;
+    max-width: 400px;
+}
+.card {
+    width: 100%;
+    padding-top: 150%;
+    position: relative;
+    background: #0b2d0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+}
+.card div {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipped, .matched {
+    background: #ffffff;
+}
+.blurred {
+    filter: blur(5px);
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1em;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+}
+.developer-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #2c2c2c;
+}
+button{
+    background-color: #34a85b;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #0b2d0b;
+}
